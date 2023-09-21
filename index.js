@@ -6,7 +6,10 @@ const PORT = process.env.PORT || 4000;
 const cors = require("cors");
 
 app.use(cors({origin: "https://pt-international-mandiri-expo.onrender.com"}))
-app.options('*', cors())
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    next();
+});
 
 const body_parser = require('body-parser');
 app.use(body_parser.json());
