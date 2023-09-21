@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 4000;
 // requiring cors 
 const cors = require("cors");
 
-app.use(cors({origin: "http://pt-international-mandiri-expo.onrender.com"}))
+app.use(cors({origin: "https://pt-international-mandiri-expo.onrender.com"}))
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     next();
