@@ -4,7 +4,9 @@ const PORT = process.env.PORT || 4000;
 
 // requiring cors 
 const cors = require("cors");
-app.use(cors({ origin: 'http://localhost:3000' }));
+
+app.use(cors({origin: "https://pt-international-mandiri-expo.onrender.com"}))
+app.options('*', cors())
 
 const body_parser = require('body-parser');
 app.use(body_parser.json());
