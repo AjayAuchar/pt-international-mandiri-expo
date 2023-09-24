@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/api/*"  # Define the path you want to proxy (e.g., /api/*)
-  to = "https://api.ptinternationalmandiriexpo.com"  # Replace with your actual backend Netlify subdomain and path
-  status = 200  # Use 200 to indicate a successful proxy
-  publish = "build"
